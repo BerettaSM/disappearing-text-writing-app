@@ -22,14 +22,10 @@ class GUI(Frame):
 
     def __init__(self, master):
         super().__init__(master)
-        self.master = master
 
         self.master: Tk = master
         self.master.title('Disappearing Text Writing App')
         self.master.resizable(width=False, height=False)
-
-        # icon = ImageTk.PhotoImage(Image.open(io.BytesIO(ICON)))
-        # self.master.wm_iconphoto(False, icon)
 
         self.grid(row=0, column=0, sticky=N + W + E + S)
         self.configure(pady=30, padx=30)
